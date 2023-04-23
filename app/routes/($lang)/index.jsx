@@ -110,7 +110,7 @@ export default function Homepage() {
               return (
                 <ProductSwimlane
                   products={products.nodes}
-                  title="Best Products"
+                  title="Unsere neuen Produkte"
                   count={4}
                 />
               );
@@ -138,7 +138,7 @@ export default function Homepage() {
               return (
                 <FeaturedCollections
                   collections={collections.nodes}
-                  title="Collections"
+                  title="Kategorien"
                 />
               );
             }}

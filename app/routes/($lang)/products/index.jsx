@@ -34,12 +34,12 @@ export async function loader({request, context: {storefront}}) {
 
   const seoCollection = {
     id: 'all-products',
-    title: 'All Products',
+    title: 'Unsere Produkte',
     handle: 'products',
     descriptionHtml: 'All the store products',
     description: 'All the store products',
     seo: {
-      title: 'All Products',
+      title: 'Unsere Produkte',
       description: 'All the store products',
     },
     metafields: [],
