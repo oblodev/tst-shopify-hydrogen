@@ -24,6 +24,8 @@ import {Suspense, useEffect, useMemo} from 'react';
 import {useIsHydrated} from '~/hooks/useIsHydrated';
 import {useCartFetchers} from '~/hooks/useCartFetchers';
 
+import logo from '../../public/images/compits.png';
+
 export function Layout({children, layout}) {
   return (
     <>
@@ -220,7 +222,7 @@ function DesktopHeader({isHome, menu, openCart, title}) {
     >
       <div className="flex gap-12">
         <Link className="font-bold" to="/" prefetch="intent">
-          {title}
+          <img src={logo} alt="" className="w-60" />
         </Link>
         <nav className="flex gap-8">
           {/* Top level menu items */}
@@ -361,8 +363,7 @@ function Footer({menu}) {
       <div
         className={`self-end pt-8 opacity-50 md:col-span-2 lg:col-span-${itemsCount}`}
       >
-        &copy; {new Date().getFullYear()} / Shopify, Inc. Hydrogen is an MIT
-        Licensed Open Source project.
+        &copy; {new Date().getFullYear()} / Compits-Test-Shopäö
       </div>
     </Section>
   );
